@@ -1,6 +1,6 @@
 import telebot
 from telebot import types
-bot = telebot.TeleBot("6247544547:AAGriW_V9h7CKPHG0VSRXL9BJvzkOqxVoYI")
+bot = telebot.TeleBot("2140077739:AAGIelz5ZJc6gIGsJ0t-yTV1Kt50hwWukfc")
 
 # Define the '/start' command
 
@@ -19,7 +19,7 @@ def send_welcome(message):
         'Open Calculator', callback_data='/calc')
     keyboard.add(button1)
     first_name = message.from_user.first_name
-    bot.reply_to(message, f"<b>{first_name}, Welcome to my bot!, Please Support Us - @KaranCoder || @TGBotsCode</b>",
+    bot.reply_to(message, f"<b>{first_name}, Welcome to my bot!, Please Support Us - @NOOBX7 </b>",
                  parse_mode="HTML", reply_markup=keyboard)
     # bot.delete_message(chat_id=message.chat.id, message_id=message.message_id)
 
@@ -104,7 +104,7 @@ def handle_callback(call):
                 'Open Calculator', callback_data='/calc')
             keyboard.add(button1)
             first_name = call.message.from_user.first_name
-            text = f"<b>{first_name}, Welcome to my bot!, Please  Support Us - @KaranCoder || @TGBotsCode</b>"
+            text = f"<b>{first_name}, Welcome to my bot!, Please  Support Us - @NOOBX7</b>"
             bot.edit_message_text(chat_id=call.message.chat.id,
                                   message_id=call.message.message_id, parse_mode="HTML",
                                   text=text, reply_markup=keyboard)
@@ -122,7 +122,7 @@ def handle_text(message):
         'Open Calculator', callback_data='/calc')
         keyboard.add(button1)
         first_name = message.from_user.first_name
-        bot.reply_to(message, f"<b>{first_name}, Welcome to my bot!, Please Support Us - @KaranCoder || @TGBotsCode</b>",
+        bot.reply_to(message, f"<b>{first_name}, Welcome to my bot!, Please Support Us - @NOOBX7 </b>",
                  parse_mode="HTML", reply_markup=keyboard)
         if message.message_id:
             bot.delete_message(chat_id=message.chat.id,message_id=message.message_id)
